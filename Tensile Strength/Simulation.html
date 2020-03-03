@@ -21,6 +21,7 @@
         <link href="../vendors/owl-carousel/owl.theme.css" rel="stylesheet"/>
         <link href="../vendors/font-awesome/css/font-awesome.css" rel="stylesheet"/>
         <link href="../css/style.css" rel="stylesheet"/>
+        <!-- <link href="./exp1.css" rel="stylesheet" type="text/css"/> -->
         <!-- Template Head End -->
         <script> 
             function toggle() 
@@ -39,13 +40,41 @@
                 }
             }
         </script> 
-        
+        <!-- <script src="exp1.js"></script> -->
         <style>
             #toggle_visibility
             {
                 text-align:center;
                 position: static;
             }
+            /* #start
+            {
+                transition-duration: 0.4s;
+                color:#337ab7;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+            #stop
+            {
+                transition-duration: 0.4s;
+                color:#337ab7;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+            #start:hover
+            {
+                background-color: #77BB41;
+                color: #FFFFFF;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+            #stop:hover
+            {
+                background-color: #77BB41;
+                color: #FFFFFF;
+                font-size: 16px;
+                border-radius: 8px;
+            } */
             #animation
             {
                 transition-duration: 0.4s;
@@ -66,14 +95,16 @@
                 position: relative;
                 margin-top: 50px;
                 visibility: hidden;
+                border: #77BB41;
+                border-radius: 8px;
             }
             #steel
             {
-                margin: 0px 50px;
+                margin: 0px 0px;
             }
             #ploymer
             {
-                margin: 50px 0px;
+                margin: 0px 0px;
             }
             #top_margin
             {
@@ -122,15 +153,44 @@
         </header>
         <hr id="top_margin"/>
         <!-- Template Header End -->
+        <!-- <div id="ss" style="position: relative;">
+			<button id="start">
+                Start
+            </button> 
+			<button id="stop">
+                Stop
+            </button>
+        </div> -->
+        <div style="position: relative;text-align: right;margin: 0px 50px;">
+            <a href="./Exp-1 Tension Test.pdf">
+                Read More About The Experiment (Click Here)
+            </a>
+        </div>
         <div id="toggle_visibility">
             <button id="animation" onclick="toggle()">
                 Start Simulation
             </button>
         </div>
+        <!-- <div id="regions" style="position: relative;">
+			<div class="trapezoid " id="xdt"></div>
+			<span class="dot" id="dot1"></span>
+			<div class="trapezoid " id="ydt"></div>
+			<span class="dot" id="dot2"></span>
+			<div id="up">
+				<div id ="xabox"></div>
+				<div id ="xbbox"></div>
+				<div id ="xcbox"></div>		
+			</div>
+			<div id="down">
+				<div id ="yabox"></div>
+				<div id ="ybbox"></div>
+				<div id ="ycbox"></div>
+			</div>	
+		</div> -->
+        
         <div id="sim">
             <img id="steel" height="575" width="360" src="../tensile-test-steel.gif">
             <img id="polymer" height="575" width="360" src="../giphy.gif" >
         </div>
-        
     </body>
 </html>
