@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Template Head Start -->
+        <meta charset="utf-8"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Welcome to Virtual Labs - A MHRD Govt of india Initiative" name="description"/>
+        <meta content="Virtual Labs - A MHRD Govt of india Initiative" name="author"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        
+        <title>
+            Welcome to Virtual Labs - A MHRD Govt of india Initiative
+        </title>
+        
+        <link href="./images/favicon.ico" rel="shortcut icon"/>
+        <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="./vendors/owl-carousel/owl.carousel.css" rel="stylesheet"/>
+        <link href="./vendors/owl-carousel/owl.theme.css" rel="stylesheet"/>
+        <link href="./vendors/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+        <link href="./css/style.css" rel="stylesheet"/>
+        <!-- Template Head End -->
+        <script> 
+            function toggle() 
+            {
+                var b=document.getElementById("animation");
+                var x=document.getElementById("sim");
+                if (x.style.visibility === "visible") 
+                {
+                    x.style.visibility = "hidden";
+                    b.innerHTML="Start Simulation";
+                }
+                else
+                {
+                    x.style.visibility = "visible";
+                    b.innerHTML="Stop Simulation";
+                }
+            }
+        </script> 
+        
+        <style>
+            #toggle_visibility
+            {
+                text-align:center;
+                position: static;
+            }
+            #animation
+            {
+                transition-duration: 0.4s;
+                color:#337ab7;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+            #animation:hover
+            {
+                background-color: #77BB41;
+                color: #FFFFFF;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+            #sim 
+            {
+                text-align: center;
+                position: relative;
+                margin-top: 150px;
+                visibility: hidden;
+            }
+            #steel
+            {
+                margin: 0px 50px;
+            }
+            #ploymer
+            {
+                margin: 50px 0px;
+            }
+            #top_margin
+            {
+                background:#ff6600 !important;
+                height: 8px;
+                margin-top: 0px;
+            }
+        </style>
+
+    </head>
+    
+    <body>
+        <!-- Template Header Start -->
+        <header>
+            <nav class="navbar navbar-default" style="background-color: white !important; margin-bottom: 0px !important;">
+                <div class="container-fluid">
+                    <div class="navbar-header page-scroll">
+                        <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar" style="background-color: #77BB41"></span>
+                            <span class="icon-bar" style="background-color: #77BB41"></span>
+                            <span class="icon-bar" style="background-color: #77BB41"></span>
+                        </button>
+                        <a class="navbar-brand main-logo-a" href="http://vlabs.ac.in/index.html">
+                            <img class="img-responsive main-logo" src="./images/logo-new.png"/>
+                        </a>
+                    </div>			
+    
+                    <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
+                        <ul class="nav navbar-nav navbar-right menu-ul">
+                            <li class="page-scroll menu-li">
+                                <a class="menu-a" href="http://vlabs.ac.in/index.html">HOME</a>
+                            </li>
+                            <li class="page-scroll menu-li menu-li-active">
+                                <a class="menu-a menu-a-active" href="http://vlabs.ac.in/labs.html">ALL LABS</a>
+                            </li>
+                            <li class="page-scroll menu-li">
+                                <a class="menu-a" href="http://vlabs.ac.in/index.html#partner">PARTNERS</a>
+                            </li><li class="page-scroll menu-li">
+                                <a class="menu-a" href="http://vlabs.ac.in/index.html#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <hr id="top_margin"/>
+        <!-- Template Header End -->
+        <div id="toggle_visibility">
+            <button id="animation" onclick="toggle()">
+                Start Simulation
+            </button>
+        </div>
+        <div id="sim">
+            <img id="steel" height="575" width="360" src="./tensile-test-steel.gif">
+            <img id="polymer" height="575" width="360" src="./giphy.gif" >
+        </div>
+        
+    </body>
+</html>
